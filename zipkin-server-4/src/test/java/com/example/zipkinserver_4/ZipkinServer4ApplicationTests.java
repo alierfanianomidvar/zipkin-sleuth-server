@@ -1,4 +1,4 @@
-package com.example.zipkinserver4;
+package com.example.zipkinserver_4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

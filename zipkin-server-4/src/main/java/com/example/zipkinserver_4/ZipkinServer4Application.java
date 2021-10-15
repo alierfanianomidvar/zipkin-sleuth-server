@@ -1,4 +1,4 @@
-package com.example.zipkinserver4;
+package com.example.zipkinserver_4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
