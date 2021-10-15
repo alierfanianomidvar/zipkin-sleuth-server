@@ -1,8 +1,8 @@
-package com.example.zipkinserver2.api.src.controller;
+package com.example.zipkinserver_2.api.src.controller;
 
 
-import com.example.zipkinserver2.api.src.util.helper.ResponseHelper;
-import com.example.zipkinserver2.business.src.service.Zipkin2Service;
+import com.example.zipkinserver_2.api.src.util.helper.ResponseHelper;
+import com.example.zipkinserver_2.business.src.service.Zipkin2Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

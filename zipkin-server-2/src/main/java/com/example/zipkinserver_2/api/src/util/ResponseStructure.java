@@ -1,4 +1,4 @@
-package com.example.zipkinserver2.api.src.util;
+package com.example.zipkinserver_2.api.src.util;
 
 public class ResponseStructure<T> {
 

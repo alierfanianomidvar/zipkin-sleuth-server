@@ -1,6 +1,6 @@
-package com.example.zipkinserver2.api.src.util.helper;
+package com.example.zipkinserver_2.api.src.util.helper;
 
-import com.example.zipkinserver2.api.src.util.ResponseStructure;
+import com.example.zipkinserver_2.api.src.util.ResponseStructure;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
