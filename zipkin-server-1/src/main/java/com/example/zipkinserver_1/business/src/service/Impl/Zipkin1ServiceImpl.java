@@ -2,6 +2,7 @@ package com.example.zipkinserver_1.business.src.service.Impl;
 
 import com.example.zipkinserver_1.business.src.service.Zipkin1Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -15,6 +16,11 @@ public class Zipkin1ServiceImpl implements Zipkin1Service {
 
     @Autowired
     RestTemplate restTemplate;
+
+    @Bean
+    public AlwaysSampler alwaysSampler() {
+        return new AlwaysSampler();
+    }
 
     @Bean
     public RestTemplate getRestTemplate() {

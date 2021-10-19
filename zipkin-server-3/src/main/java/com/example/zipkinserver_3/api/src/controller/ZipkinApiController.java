@@ -16,7 +16,7 @@ public class ZipkinApiController {
     @Autowired
     private Zipkin3Service zipkin3Service;
 
-    @RequestMapping(value = "/zipkin-server-2", method = RequestMethod.POST)
+    @RequestMapping(value = "/zipkin-server-3", method = RequestMethod.GET)
     public ResponseEntity save() {
         return ResponseHelper.response(zipkin3Service.thirdZipkin());
     }

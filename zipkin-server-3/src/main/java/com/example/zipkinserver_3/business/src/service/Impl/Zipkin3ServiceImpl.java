@@ -2,6 +2,7 @@ package com.example.zipkinserver_3.business.src.service.Impl;
 
 import com.example.zipkinserver_3.business.src.service.Zipkin3Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -17,6 +18,11 @@ public class Zipkin3ServiceImpl implements Zipkin3Service {
     RestTemplate restTemplate;
 
     @Bean
+    public AlwaysSampler alwaysSampler() {
+        return new AlwaysSampler();
+    }
+
+    @Bean
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
@@ -26,7 +32,7 @@ public class Zipkin3ServiceImpl implements Zipkin3Service {
     @Override
     public String thirdZipkin() {
         LOG.info("Inside zipkinService 3..");
-        String response = (String) restTemplate.exchange("http://localhost:8083/zipkin/zipkin-server-4", HttpMethod.GET,
+        String response = (String) restTemplate.exchange("http://localhost:8084/zipkin/zipkin-server-4", HttpMethod.GET,
                 null, new ParameterizedTypeReference<String>() {
                 }).getBody();
         return response;

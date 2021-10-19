@@ -25,8 +25,12 @@
 	</properties>
 
 	<modules>
-
+		<module>zipkin-server-1</module>
+		<module>zipkin-server-2</module>
+		<module>zipkin-server-3</module>
+		<module>zipkin-server-4</module>
 	</modules>
+
 
 	<dependencies>
 
