@@ -1,7 +1,7 @@
 #zipkin-sleuth-server
 zipkin-sleuth-server
 
-###zipkin
+### zipkin
 
 For building and starting an instance of Zipkin for checking out Zipkin locally. There are three options: 
 using Java, Docker or running from source. in this project we use java.
@@ -15,7 +15,7 @@ java -jar zipkin.jar
 ````
 zipkin UI will be at this address http://localhost:9411/zipkin/
 
-###sleuth
+### sleuth
 This library makes it possible to identify logs pertaining to a specific job, thread, or request. Sleuth integrates 
 effortlessly with logging frameworks like Logback and SLF4J to add unique identifiers that help track and diagnose issues using logs.
 
