@@ -13,7 +13,7 @@ self-contained executable jar:
 curl -sSL https://zipkin.io/quickstart.sh | bash -s
 java -jar zipkin.jar
 ````
-zipkin UI will be at this address http://localhost:9411/zipkin/.
+zipkin UI will be at this address http://localhost:9411/zipkin/
 
 ###sleuth
 This library makes it possible to identify logs pertaining to a specific job, thread, or request. Sleuth integrates 
